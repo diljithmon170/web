@@ -1,0 +1,4 @@
+body{border-style: 2x dotted black;
+            background-image: url("Boat.gif");
+            }
+            a:hover, a:active {background-color: yellow;}

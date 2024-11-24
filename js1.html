@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script>
+            // function fact(n)
+            // {
+            //     if (n == 0)
+            // {
+            //     return 0;
+            // }
+            // else if (n == 1){
+            //     return 1;
+            // }
+            // else{
+            //     return n * fact(n-1);
+            // }
+            // }
+            // const x=window.prompt("enter the number");
+            // const res=fact(x);
+            // document.write("<p>fact of " + x +" is " + res);
+            
+                var friends=["adarsh","gokul","hilal"];
+                
+                
+            for(i in friends){
+                
+                document.writeln(friends[i] + "<br>");
+                
+            }
+            function change(){
+                document.getElementById("p1").style.color="blue";
+            }
+            function prime(){
+                var num = window.prompt("enter the number");
+                var flag = 0;
+                for (var i = 2; i <= num; i++) {
+                    if (num % i == 0) {
+                        flag = 1;
+                        break;
+                    }
+            }
+            if(flag==0){
+                document.write("number is prime");
+            }
+            else{
+                document.write("number is not prime");
+            }
+            }
+            var per=new Object();
+            per.name="name1";
+            per.age=20;
+            per["city"]="bangalore";
+            for(x in per){
+                document.writeln(per[x] + "<br>");
+            }
+            for(x in per){
+                alert(per[x] + "<br>");
+            }
+            </script>
+    </head>
+    <body>
+        <h1 id="p1">hfg</h1>
+        <button onclick="change()">click</button>
+        <button onclick="prime()">prime click</button>
+    </body>
+    </html>

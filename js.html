@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function hel() {
+                document.getElementById("hello").innerHTML="welcome";
+            }
+            function fun(){
+                var name1=document.form1.fname.value;
+                var age=document.form1.age.value;
+                window.alert(name1 + age);
+
+            }
+        </script>
+    </head>
+    <body>
+        <p id="hello">hi</p>
+        <input type="button" onClick="hel()" value="S"><br>
+        <form name="form1" method="post">
+        Name: <input type="text" name="fname"><br>
+        age: <input type="number" name="age"><br>
+        <input type="submit" onClick="fun()">
+        </form>
+    </body>
+</html>
