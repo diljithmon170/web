@@ -1,10 +1,12 @@
 <?php
+// take the values from the form
 if (isset($_POST["submit"])){
     $n1=$_POST["num1"];
     $n2=$_POST["num2"];
     $op=$_POST["submit"];
     $res="";
 }
+//set empty values
 else{$n1=""; $n2=""; $res="";}
 if(is_numeric($n1) and is_numeric($n2)){
     switch($op){

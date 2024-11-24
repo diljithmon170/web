@@ -1,4 +1,5 @@
 <?php
+//initializing server user pass db
 $servername="localhost";
 $username="root";
 $password="";
@@ -33,7 +34,7 @@ if ($conn){
     else{
         echo "data not inserted".mysqli_error($conn);
     }
-    // //select
+    // //select query
     $sql2="SELECT * FROM demo";
     $res2=$conn->query($sql2);
 
@@ -48,7 +49,7 @@ if ($conn){
             echo "number= " .$row["number"]."<br>";
         }}
         else{
-            //if nO datas
+            //if no datas
             echo "0 result";
         }
         //UPDATE    demo
