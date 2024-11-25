@@ -36,7 +36,10 @@ if($str==$rev){
 }
 else{
     print("not palindrome");
-}?>
+}
+
+echo "sum= ".$sum."<br>";
+?>
 <html>
 <body>
 <!-- number is taken from the form-->

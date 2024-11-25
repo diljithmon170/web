@@ -26,6 +26,11 @@ if(is_numeric($n1) and is_numeric($n2)){
             echo "enter the digit";
     }
 }
+function hel()
+{
+    echo "hello";
+}
+hel();
 ?>
 <html>
     <head>

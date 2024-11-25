@@ -34,6 +34,8 @@ if ($conn){
     else{
         echo "data not inserted".mysqli_error($conn);
     }
+
+
     // //select query
     $sql2="SELECT * FROM demo";
     $res2=$conn->query($sql2);
@@ -52,6 +54,8 @@ if ($conn){
             //if no datas
             echo "0 result";
         }
+
+        
         //UPDATE    demo
     $sql3="UPDATE demo SET name='lost123' WHERE id=2";
     $res3=mysqli_query($conn,$sql3);
