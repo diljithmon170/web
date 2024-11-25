@@ -1,3 +1,5 @@
+//schema of the below array
+
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
@@ -32,4 +34,14 @@
     "required": ["id", "name", "email"],
     "additionalProperties": false
   }
+  // array
+
+  {
+    "id": 123,
+    "name": "Alice",
+    "email": "alice@example.com",
+    "age": 30,
+    "roles": ["admin", "user"]
+  }
+  
   
