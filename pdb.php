@@ -38,7 +38,7 @@ if ($conn){
 
     // //select query
     $sql2="SELECT * FROM demo";
-    $res2=$conn->query($sql2);
+    $res2=mysqli_query($conn,$sql2);
 
         //if datas is inside
     if($res2){
@@ -55,7 +55,7 @@ if ($conn){
             echo "0 result";
         }
 
-        
+
         //UPDATE    demo
     $sql3="UPDATE demo SET name='lost123' WHERE id=2";
     $res3=mysqli_query($conn,$sql3);
