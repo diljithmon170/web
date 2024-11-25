@@ -42,7 +42,8 @@ echo "sum= ".$sum."<br>";
 ?>
 <html>
 <body>
-<!-- number is taken from the form-->
+
+
 <form method="post" action="pp.php">
 num1: <input type="number" name="n1">
 num2: <input type="number" name="n2">
